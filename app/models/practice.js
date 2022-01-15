@@ -3,6 +3,8 @@ const moment = require('moment')
 
 const practiceSchema = new mongoose.Schema(
   {
+    // how many minutes to practice each day
+    minutesGoal: { type: Number, default: 0 },
     streakStart: Date,
     lastPracticed: Date,
     skill: {
@@ -17,11 +19,12 @@ const practiceSchema = new mongoose.Schema(
     }
   },
   {
-    timestamps: true
+    timestamps: true,
+    toJSON: { virtuals: true }
   }
 )
 
-practiceSchema.virtual('streakStart').get(function () {
+practiceSchema.virtual('daysStreak').get(function () {
   // if we've never practiced there isnt a streak
   if (!this.lastPracticed || !this.streakStart) {
     return 0

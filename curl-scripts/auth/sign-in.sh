@@ -3,6 +3,7 @@
 API="http://localhost:4741"
 URL_PATH="/sign-in"
 
+# EMAIL=b@b PASSWORD=b sh curl-scripts/auth/sign-in.sh
 curl "${API}${URL_PATH}" \
   --include \
   --request POST \
