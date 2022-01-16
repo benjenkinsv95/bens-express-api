@@ -3,7 +3,7 @@
 API="http://localhost:4741"
 URL_PATH="/practices"
 
-# TOKEN=TOKEN_HERE SKILL=SKILL_HERE GOAL=5 STREAK_START="2022-01-11" LAST_PRACTICED="2022-01-15" sh curl-scripts/practice/create.sh
+# SKILL=SKILL_HERE TOKEN=TOKEN_HERE GOAL=5 STREAK_START="2022-01-11" LAST_PRACTICED="2022-01-15" sh curl-scripts/practice/create.sh
 
 curl "${API}${URL_PATH}" \
   --include \
