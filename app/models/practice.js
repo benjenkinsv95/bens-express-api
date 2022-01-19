@@ -48,4 +48,17 @@ practiceSchema.virtual('daysStreak').get(function () {
   return 1 + lastPracticedMoment.diff(streakStartMoment, 'days')
 })
 
+practiceSchema.virtual('daysSinceStreak').get(function () {
+  // if we've never practiced there isnt a streak
+  if (!this.lastPracticed || !this.streakStart) {
+    return -1
+  }
+
+  // convert dates into momentjs
+  const todayMoment = moment()
+  const lastPracticedMoment = moment(this.lastPracticed)
+
+  return todayMoment.diff(lastPracticedMoment, 'days')
+})
+
 module.exports = mongoose.model('Practice', practiceSchema)
