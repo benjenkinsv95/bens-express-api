@@ -59,9 +59,9 @@ app.use(requestLogger)
 
 // register route files
 app.use(exampleRoutes)
-app.use(userRoutes)
-app.use(skillRoutes)
-app.use(practiceRoutes)
+app.use('skill-tracker', userRoutes)
+app.use('skill-tracker', skillRoutes)
+app.use('skill-tracker', practiceRoutes)
 
 // register error handling middleware
 // note that this comes after the route middlewares, because it needs to be
