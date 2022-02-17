@@ -1,6 +1,6 @@
 #!/bin/sh
 
-API="http://localhost:4741"
+API="http://localhost:4741/skill-tracker"
 URL_PATH="/practices"
 
 # TOKEN=TOKEN_HERE sh curl-scripts/practice/index.sh

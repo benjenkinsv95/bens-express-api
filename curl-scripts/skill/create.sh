@@ -1,6 +1,6 @@
 #!/bin/bash
 
-API="http://localhost:4741"
+API="http://localhost:4741/skill-tracker"
 URL_PATH="/skills"
 
 # TOKEN=TOKEN_HERE NAME="Duolingo Latin" DESC="Practice Latin on Duolingo" PUBLIC=true REVIEW_URL="https://docs.google.com/document/d/1SJ2Ke625vsrdKOD8t9KflyZo1DVpemcH1nsA8jWJCaw/edit?usp=sharing" PRACTICE_URL="https://www.duolingo.com/learn" sh curl-scripts/skill/create.sh

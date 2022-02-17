@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # EMAIL=b@b PASSWORD=b sh curl-scripts/auth/sign-up.sh
-API="http://localhost:4741"
+API="http://localhost:4741/skill-tracker"
 URL_PATH="/sign-up"
 
 curl "${API}${URL_PATH}" \

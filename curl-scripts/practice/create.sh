@@ -1,6 +1,6 @@
 #!/bin/bash
 
-API="http://localhost:4741"
+API="http://localhost:4741/skill-tracker"
 URL_PATH="/practices"
 
 # SKILL=SKILL_HERE TOKEN=TOKEN_HERE GOAL=5 STREAK_START="2022-01-11" LAST_PRACTICED="2022-01-15" sh curl-scripts/practice/create.sh
