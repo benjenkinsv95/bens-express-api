@@ -11,6 +11,12 @@ URL_PATH="/skills"
 
 # TOKEN=TOKEN_HERE NAME="Gratitude Journal" DESC="Practice being grateful" PUBLIC=true REVIEW_URL="https://www.youtube.com/watch?v=WPPPFqsECz0" PRACTICE_URL="https://drive.google.com/drive/u/0/folders/1L_pVQ6Xmr86hsRwf8SMxdPX5iipq7se0" sh curl-scripts/skill/create.sh
 
+# TOKEN=TOKEN_HERE NAME="Practice Guitar" DESC="4 Chords by Axis of Awesome" PUBLIC=true REVIEW_URL="https://www.youtube.com/watch?v=lbA5z_OI3H4" PRACTICE_URL="https://www.youtube.com/watch?v=oOlDewpCfZQ" sh curl-scripts/skill/create.sh
+
+# TOKEN=TOKEN_HERE NAME="Rubik's Cube" DESC="Practice solving 3x3" PUBLIC=true REVIEW_URL="https://www.youtube.com/watch?v=KGvQRaK1mvs&t=5s" PRACTICE_URL="https://app.memrise.com/course/133319/solve-the-rubiks-cube/" sh curl-scripts/skill/create.sh
+
+# TOKEN=TOKEN_HERE NAME="Doomsday Rule" DESC="Practice a random date since 1800" PUBLIC=true REVIEW_URL="https://www.timeanddate.com/date/doomsday-rule.html" PRACTICE_URL="https://www.timeanddate.com/date/doomsday-weekday.html" sh curl-scripts/skill/create.sh
+
 curl "${API}${URL_PATH}" \
   --include \
   --request POST \

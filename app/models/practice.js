@@ -55,8 +55,8 @@ practiceSchema.virtual('daysSinceStreak').get(function () {
   }
 
   // convert dates into momentjs
-  const todayMoment = moment()
-  const lastPracticedMoment = moment(this.lastPracticed)
+  const todayMoment = moment().utcOffset('-0600')
+  const lastPracticedMoment = moment(this.lastPracticed).utcOffset('-0600')
 
   return todayMoment.diff(lastPracticedMoment, 'days')
 })
